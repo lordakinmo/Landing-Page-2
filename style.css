@@ -1,0 +1,105 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    box-sizing: border-box;
+}
+ main {
+    margin: 7em 1em;
+    border-radius: 10px;
+}
+
+#header-image {
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 
+    border-bottom: 1px solid hsl(244, 38%, 16%);
+    border-radius: 10px 10px 0px 0px; 
+}
+#header-image .responsive1{    
+    width: 100%;
+    height: auto;  
+    opacity: 0.5;
+    border-radius: 10px 10px 0px 0px;
+}
+#header-image .responsive2{
+    display: none;
+}
+#info-area {
+    background-color: hsl(244, 38%, 16%);
+    text-align: center;
+    margin-top: -0.3em;
+    padding: 1.5em 1em;
+    font-family: 'Inter', sans-serif;
+    border-radius: 0px 0px 10px 10px;
+
+}
+#biz_grow {
+    font-weight: 700;
+    font-size:32px;
+    line-height: 1.1em;
+}
+#biz_grow span {
+    color: hsl(277, 64%, 61%);
+}
+#info-area #discover {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.8em;
+    margin-bottom: 3.5em;
+   color: hsla(0, 0%, 100%, 0.75)
+}
+#info-area .figures {
+    font-weight: 700;
+    font-size: 28px;
+}
+#info-area .features {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: -1.2em;
+    margin-bottom: 3em;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media only screen and (min-width: 1440px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 300px 120px;
+    }
+    #header-image {
+        width: 100%;
+        border-radius: 0px 10px 10px 0px; 
+        flex-grow: 1;
+    }
+    #header-image .responsive1{ 
+        display: none;
+    }
+    #header-image .responsive2{
+        display: inline-flex;
+        width: 100%;
+        height: 100%;  
+        opacity: 0.5;
+        border-radius: 0px 15px 15px 0px; 
+     }
+     #info-area {
+         padding: 80px 80px 80px 60px;
+         border-radius: 15px 0px 0px 15px;
+         flex-grow: 3;
+         margin-top: 0em;
+     }
+     #biz_grow {
+        font-weight: 700;
+        font-size:48px;
+        line-height: 1.1em;
+        text-align: left;
+    }
+    #info-area #discover {
+        text-align: left;
+        font-size: 20px;
+    }
+    #info-area #ratings {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
